@@ -11,6 +11,11 @@ Open the index.html in the browser.
 
 
 def count_words(text):
+    """
+    the function counts the words in the text corpus
+    which is provided, input needs to be a string (str)
+    and returns an integer(int)
+    """
     if not isinstance(text, str):
         raise TypeError("only accepts strings")
 
@@ -24,5 +29,5 @@ def count_words(text):
 
 
 if __name__ == "__main__":
-    text = "everlyn\nTosin"
-    print(count_words(text))
+    SOME_WORDS = "everlyn\nTosin"
+    print(count_words(SOME_WORDS))
